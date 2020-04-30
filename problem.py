@@ -165,7 +165,7 @@ def post(date):
 
 
 for i in range(len(problem)):
-    y, m, d = problem[i].split("-")
+    y, m, d = [int(a) for a in problem[i].split("-")]
     date = datetime.date(y, m, d)
     all_try = 3
     for trying in range(all_try):
