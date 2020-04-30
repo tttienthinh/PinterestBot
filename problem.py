@@ -1,4 +1,4 @@
-problem = ['2020-01-06', '2020-01-07', '2020-01-08', '2020-01-09', '2020-01-10', '2020-01-11', '2020-01-12',
+problem = ['2020-01-09', '2020-01-10', '2020-01-11', '2020-01-12',
            '2020-01-13',
            '2020-01-14', '2020-01-15', '2020-01-16', '2020-01-17', '2020-01-18', '2020-01-19', '2020-01-21',
            '2020-01-22',
@@ -97,7 +97,7 @@ if len(arg) > 1:
     nombre = int(arg[5])
 else:
     today = datetime.date(2020, 1, 1)
-    wait = 0
+    wait = 1800
     nombre = 125
 
 
@@ -176,7 +176,7 @@ for i in range(len(problem)):
         except KeyboardInterrupt:
             sys.exit()
         except:
-            if trying == all_try-1:
+            if trying == all_try - 1:
                 erreur(date, sys.exc_info()[0])
                 break
             else:
