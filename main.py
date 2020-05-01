@@ -6,7 +6,7 @@ from py3pin.Pinterest import Pinterest
 from PIL import Image, ImageDraw, ImageFont
 
 pinterest = Pinterest(email='journaldespace@gmail.com',
-                      password='iee!NICE150402',
+                      password='',
                       username='journaldespace')
 try:
     pinterest.login()
